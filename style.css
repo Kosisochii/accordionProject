@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'work_sans';
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(275, 100%, 97%);
+    position: relative;
+    font-family: work_sans;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-image: url('assets/images/background-pattern-mobile.svg');
+    width: 100%;
+    height: 230px;
+}
+#star{
+    width: 20px;
+}
+
+.starContainer div{
+    margin-left: 22px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: work_sans;
+}
+.starContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.starContainer p{
+    font-weight: 700;
+    margin-right: 40px;
+}
+main{
+    background-color: white;
+    top: 100px;
+    position: absolute;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px;
+    /* width: 400px; */
+}
+.myMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid gainsboro;
+    margin: 20px 0;
+}
+.myMain p{
+    margin-top: 20px;
+    font-weight: 600;
+}
+.myMain p:hover{
+    cursor: pointer;
+    color: hsl(292, 90%, 44%);
+}
+.plus{
+    width: 20px;
+}
+.mainPara{
+    font-size: 15px;
+    color: hsl(292, 16%, 49%);
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 460px){
+    header{
+        background-image: url('assets/images/background-pattern-desktop.svg');
+        width: 100%;
+        height: 330px;
+    }
+
+    main{
+        width: 400px;
+        top: 170px;
+    }
+}
